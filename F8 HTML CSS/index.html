@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bùi Minh Chiến</title>
+        <meta charset="UTF-8">
+        <!-- Tạo logo ở thanh tab -->
+        <link rel="icon" type="image/jpg" href="Image\Logo.png">
+        <!--Đây là cách sử dụng CSS external-->
+        <!-- Liên kết file .css với file .html -->
+        <link rel="stylesheet" href="main.css">
+        <!--Đây là cách sử dụng CSS internal-->
+        <style>
+            h1{
+                color:blue;
+            }
+        </style>
+    </head>
+    <!-- Phím tắt comment: Ctrl+/ -->
+
+    <!-- 
+        1. h1-h6 (heading)
+        2. p (paragraph)
+        3. img (image)
+        4. a (anchor)
+        5. ul/ol,li (unorder list/order list, list)
+        6. table
+        7. input
+        8. button
+        9. div (tạo khối bao quanh)
+    -->
+    <body>
+        
+        <!-- Đây là cách sử dụng CSS inline -->
+        <h1 style="color: green;">Giới thiệu về Bùi Minh Chiến</h1>
+        <h2 title="Quê quán">Diễn Châu, Nghệ An</h2>
+        <hr>
+        <p>
+            Gạo đem vào giã bao đau đớn <br>
+            Gạo giã xong rồi trắng tựa bông <br>
+            Sống ở trên đời người cũng vậy <br>
+            Gian nan rèn luyện mới thành công <br>
+        </p>
+        <hr>
+        <!-- Link bằng hình ảnh, nhấn vào ảnh để thấy sự khác biệt :)) -->
+        <a href="Image/anh_Chien.JPG" target="_blank"><img src="Image/anh_Chien.JPG" alt="Chiến đang cười" title="Ảnh của Chiến" width="30%"></a>
+        <br>
+        <a href="https://www.facebook.com/profile.php?id=100037448173731">Link Facebook cá nhân của Chiến</a>
+        <ul>
+            <li>mục 1</li>
+            <li>mục 2</li>
+            <li>mục 3</li>
+            <li>mục 4</li>
+        </ul>
+        <!-- ví dụ về relative link, bấm vào sẽ nhảy đến phần có id là picture trong trang -->
+        <a href="#picture">Đến đây để xem ảnh nè</a>
+        <table>
+            <thead>
+                <th>STT</th>
+                <th>Tên</th>
+                <th>Địa chỉ</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Chiến</td>
+                    <td>Nghệ An</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Kiệt</td>
+                    <td>Nghệ An</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <input type="text"> <!--ô này để nhập chữ-->
+        <input type="checkbox"> <!--ô này để tick-->
+        <!-- ô tick tròn, trùng name thì chỉ đc chọn 1 ô -->
+        <input type="radio" name="Giới tính">
+        <input type="radio" name="Giới tính">
+        <input type="radio" name="Giới tính">
+        <button>Đăng ký</button>
+        <!-- vẽ một đường nằm ngang -->
+        <hr>
+        <figure>
+            <img id="picture" src="Image\Chien'sPicture.jpg" alt="ảnh Chiến 2" width="30%">
+            <figcaption>Ảnh nè</figcaption>
+        </figure>
+        <footer>
+            <br>
+            &copy; Bản quyền thuộc sở hữu của Bùi Minh Chiến
+        </footer>
+    </body>
+</html>
